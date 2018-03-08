@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8B66CF3B20487783006F5182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CF3A20487783006F5182 /* AppDelegate.swift */; };
-		8B66CF3D20487783006F5182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CF3C20487783006F5182 /* ViewController.swift */; };
+		8B66CF3D20487783006F5182 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CF3C20487783006F5182 /* CategoriesVC.swift */; };
 		8B66CF4020487783006F5182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B66CF3E20487783006F5182 /* Main.storyboard */; };
 		8B66CF4220487783006F5182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B66CF4120487783006F5182 /* Assets.xcassets */; };
 		8B66CF4520487783006F5182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B66CF4320487783006F5182 /* LaunchScreen.storyboard */; };
+		8B66CF5020487E50006F5182 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CF4F20487E50006F5182 /* CategoryCell.swift */; };
+		8B66CF5220487FDE006F5182 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CF5120487FDE006F5182 /* Category.swift */; };
+		8B66CF5520488112006F5182 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66CF5420488112006F5182 /* DataService.swift */; };
+		8B810DDD205096CC00342775 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B810DDC205096CC00342775 /* ProductCell.swift */; };
+		8B810DDF2050995B00342775 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B810DDE2050995B00342775 /* Product.swift */; };
+		8B810DE120509F7600342775 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B810DE020509F7600342775 /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B66CF3720487782006F5182 /* Swag App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swag App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B66CF3A20487783006F5182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B66CF3C20487783006F5182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B66CF3C20487783006F5182 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		8B66CF3F20487783006F5182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B66CF4120487783006F5182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B66CF4420487783006F5182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B66CF4620487783006F5182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B66CF4F20487E50006F5182 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		8B66CF5120487FDE006F5182 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8B66CF5420488112006F5182 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8B810DDC205096CC00342775 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		8B810DDE2050995B00342775 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8B810DE020509F7600342775 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		8B66CF3920487782006F5182 /* Swag App */ = {
 			isa = PBXGroup;
 			children = (
+				8B66CF5320488102006F5182 /* services */,
+				8B66CF4E20487E0D006F5182 /* View */,
+				8B66CF4D20487DFF006F5182 /* Model */,
+				8B66CF4C20487DF2006F5182 /* Controller */,
 				8B66CF3A20487783006F5182 /* AppDelegate.swift */,
-				8B66CF3C20487783006F5182 /* ViewController.swift */,
 				8B66CF3E20487783006F5182 /* Main.storyboard */,
 				8B66CF4120487783006F5182 /* Assets.xcassets */,
 				8B66CF4320487783006F5182 /* LaunchScreen.storyboard */,
 				8B66CF4620487783006F5182 /* Info.plist */,
 			);
 			path = "Swag App";
+			sourceTree = "<group>";
+		};
+		8B66CF4C20487DF2006F5182 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B66CF3C20487783006F5182 /* CategoriesVC.swift */,
+				8B810DE020509F7600342775 /* ProductsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B66CF4D20487DFF006F5182 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B66CF5120487FDE006F5182 /* Category.swift */,
+				8B810DDE2050995B00342775 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B66CF4E20487E0D006F5182 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B66CF4F20487E50006F5182 /* CategoryCell.swift */,
+				8B810DDC205096CC00342775 /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B66CF5320488102006F5182 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8B66CF5420488112006F5182 /* DataService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B66CF3D20487783006F5182 /* ViewController.swift in Sources */,
+				8B810DE120509F7600342775 /* ProductsVC.swift in Sources */,
+				8B66CF3D20487783006F5182 /* CategoriesVC.swift in Sources */,
 				8B66CF3B20487783006F5182 /* AppDelegate.swift in Sources */,
+				8B66CF5020487E50006F5182 /* CategoryCell.swift in Sources */,
+				8B810DDD205096CC00342775 /* ProductCell.swift in Sources */,
+				8B66CF5220487FDE006F5182 /* Category.swift in Sources */,
+				8B66CF5520488112006F5182 /* DataService.swift in Sources */,
+				8B810DDF2050995B00342775 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D3W48XW67;
 				INFOPLIST_FILE = "Swag App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aaron.Swag-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D3W48XW67;
 				INFOPLIST_FILE = "Swag App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "aaron.Swag-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
